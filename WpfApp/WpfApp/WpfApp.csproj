@@ -116,8 +116,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="images\avatar.png" />
     <Resource Include="images\button.png" />
     <Resource Include="images\emoji.png" />
+    <Resource Include="images\exit.png" />
+    <Resource Include="images\rbtnChat.png" />
+    <Resource Include="images\rbtnPeople.png" />
+    <Resource Include="images\rbtnSetting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
