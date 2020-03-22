@@ -1,4 +1,6 @@
-﻿namespace WpfApp
+﻿using System.Windows;
+
+namespace WpfApp
 {
     public static class InputFieldValidator
     {
@@ -30,6 +32,18 @@
                 callbackMsg = "Email can`t be empty!";
                 return false;
             }
+
+            string[] dataLogin = email.Split('@'); // делим строку на две части
+            if (dataLogin.Length == 2) // проверяем если у нас две части
+            {
+                string[] data2Login = dataLogin[1].Split('.'); // делим вторую часть ещё на две части
+                if (data2Login.Length == 2)
+                {
+
+                }
+                else MessageBox.Show("Email in the format ****@*.*");
+            }
+            else MessageBox.Show("Email in the format ****@*.*");
 
             return true;
         }

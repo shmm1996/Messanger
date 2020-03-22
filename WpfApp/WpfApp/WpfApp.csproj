@@ -137,5 +137,8 @@
     <Resource Include="images\rbtnPeople.png" />
     <Resource Include="images\rbtnSetting.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\uploat.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

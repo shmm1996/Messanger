@@ -128,6 +128,8 @@ namespace UIMessSingIn
             but.Click += CreateChat;
             SolidColorBrush brush = new SolidColorBrush(Color.FromRgb(20, 70, 106));
             but.Background = brush;
+            but.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            but.BorderBrush = new SolidColorBrush(Color.FromRgb(20, 70, 106));
             return but;
         }
         private void CreateChat(object sender, RoutedEventArgs e)
