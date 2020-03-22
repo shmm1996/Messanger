@@ -16,3 +16,5 @@ D:\Messanger\WpfApp\WpfApp\obj\Debug\WpfApp.Properties.Resources.resources
 D:\Messanger\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.GenerateResource.cache
 D:\Messanger\WpfApp\WpfApp\obj\Debug\WpfApp.exe
 D:\Messanger\WpfApp\WpfApp\obj\Debug\WpfApp.pdb
+D:\Messanger\WpfApp\WpfApp\obj\Debug\WindowProfile.g.cs
+D:\Messanger\WpfApp\WpfApp\obj\Debug\WindowProfile.baml
