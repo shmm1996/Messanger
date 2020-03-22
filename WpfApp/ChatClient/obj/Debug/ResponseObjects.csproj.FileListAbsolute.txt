@@ -1,0 +1,8 @@
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\ResponseObjects.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\ResponseObjects.pdb
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ResponseObjects.csprojAssemblyReference.cache
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ResponseObjects.csproj.CoreCompileInputs.cache
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ResponseObjects.csproj.CopyComplete
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ResponseObjects.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ResponseObjects.pdb

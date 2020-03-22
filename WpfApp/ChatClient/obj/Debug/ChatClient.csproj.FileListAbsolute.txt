@@ -1,0 +1,16 @@
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ChatClient.csprojAssemblyReference.cache
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ChatClient.csproj.CopyComplete
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\ClientChat.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\bin\Debug\ClientChat.pdb
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ClientChat.dll
+C:\Users\Holy\source\repos\ConsoleApp4\ResponseObjects\obj\Debug\ClientChat.pdb
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\bin\Debug\ClientChat.dll
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\bin\Debug\ClientChat.pdb
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\bin\Debug\Newtonsoft.Json.dll
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\obj\Debug\ChatClient.csprojAssemblyReference.cache
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\obj\Debug\ChatClient.csproj.CoreCompileInputs.cache
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\obj\Debug\ChatClient.csproj.CopyComplete
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\obj\Debug\ClientChat.dll
+D:\SystemData\Desktop\Messanger\WpfApp\ChatClient\obj\Debug\ClientChat.pdb

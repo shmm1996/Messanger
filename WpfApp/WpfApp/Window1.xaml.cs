@@ -12,16 +12,61 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using ClientChat.HttpRequestHandler;
+using WpfApp;
+
 namespace UIMessSingIn
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
     public partial class Window1 : Window
     {
         public Window1()
         {
             InitializeComponent();
+
+            Init();
+        }
+
+        private void Init()
+        {
+            string url = "https://immense-brook-86861.herokuapp.com/";
+
+            RegistrationRequestHandler registrationRequestHandler = new RegistrationRequestHandler(url);
+
+            registrationRequestHandler.OnSuccesRegistrate += (token) => {
+
+                //WindowPageChat windowChat = new WindowPageChat();
+                //windowChat.Show();
+                //this.Close();
+
+                txtUserNameSignUp.Text = token;
+            };
+            registrationRequestHandler.OnErrorRegistrate += (message) => {
+                txtUserNameSignUp.Text = message;
+            };
+
+            btnSingUp.Click += (s, e) =>
+            {
+                string userName = txtUserNameSignUp.Text;
+
+                if (InputFieldValidator.ValidUserName(userName))
+                {
+                    string email = txtEmailSignUp.Text;
+
+                    if (InputFieldValidator.ValidEmail(email))
+                    {
+                        string password = txtPasswordSignUp.Text;
+
+                        if (InputFieldValidator.ValidPassword(password))
+                        {
+                            if (txtRepeatPassword.Text == password)
+                                registrationRequestHandler.RegistrateAsync(userName, email, password);
+
+                        }
+                    }
+                }
+            };
+
+            btnLoginPage.Click += (s, e) => WindowsManager.OpenLoginWindow(this);
         }
     }
 }

@@ -56,16 +56,16 @@
             </Grid.RowDefinitions>
             <Label Content="Sign in " HorizontalAlignment="Center" Margin="119,0" Grid.Row="0" VerticalAlignment="Top" Width="89" Height="48" FontSize="24" FontStyle="Normal"/>
                         
-            <Label Content="Email" HorizontalAlignment="Left" Margin="16,0,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="12" Height="26" Grid.RowSpan="2" Width="38"/>
-            <TextBox x:Name="txtEmailSignIn" HorizontalAlignment="Left" Height="38" Margin="16,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Background="#f8f8fa" BorderBrush="White" Grid.RowSpan="2"/>
+            <Label Content="Username" HorizontalAlignment="Left" Margin="16,0,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="12" Height="26" Grid.RowSpan="2" Width="73"/>
+            <TextBox x:Name="txtUserNameSignIn" HorizontalAlignment="Left" Height="38" Margin="16,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Background="#f8f8fa" BorderBrush="White" Grid.RowSpan="2"/>
             
             <Label Content="Password" HorizontalAlignment="Left" Margin="16,10,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="12" Height="24" Width="60"/>            
             <TextBox x:Name="txtPasswordSignIn" HorizontalAlignment="Left" Height="38" Margin="16,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Background="#f8f8fa" BorderBrush="White" Grid.RowSpan="2"/>
             
-            <Button x:Name="btnSignIn" Content="Sign in" HorizontalAlignment="Left" Margin="16,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="296" Height="38" Background="#258ff8" Foreground="White" FontSize="18" Click="btnSignIn_Click"/>
+            <Button x:Name="btnSignIn" Content="Sign in" HorizontalAlignment="Left" Margin="16,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="296" Height="38" Background="#258ff8" Foreground="White" FontSize="18"/>
             <Button x:Name="btnForgotPassword" Content="Forgot password?" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="6" VerticalAlignment="Top" Width="307" Height="16" Background="White" Foreground="#5993cf" BorderBrush="White" FontSize="10"/>
             <Label Content="First in WizardzsChat?" HorizontalAlignment="Center" Margin="0" Grid.Row="7" VerticalAlignment="Top" Width="110" Height="23" RenderTransformOrigin="0.367,0.449" Grid.RowSpan="2" FontSize="10"/>
-            <Button x:Name="btnRegisterAccount" Content="Register a new account" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="8" VerticalAlignment="Top" Width="307" Height="17" Background="White" Foreground="#5993cf" BorderBrush="White" Click="btnRegisterAccount_Click"/>
+            <Button x:Name="btnRegisterAccount" Content="Register a new account" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="8" VerticalAlignment="Top" Width="307" Height="17" Background="White" Foreground="#5993cf" BorderBrush="White"/>
         </Grid>
 
     </Grid>

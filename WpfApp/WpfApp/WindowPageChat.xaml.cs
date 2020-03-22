@@ -18,10 +18,15 @@ namespace UIMessSingIn
     /// Interaction logic for WindowPageChat.xaml
     /// </summary>
     public partial class WindowPageChat : Window
-    {
-        public WindowPageChat()
+    { 
+        public WindowPageChat(string userName, string email, string token)
         {
             InitializeComponent();
+        }
+
+        private void Init()
+        {
+
         }
     }
 }

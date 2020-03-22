@@ -13,30 +13,54 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using ClientChat.HttpRequestHandler;
+using WpfApp;
+
 namespace UIMessSingIn
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            Init();
         }
 
-        private void btnRegisterAccount_Click(object sender, RoutedEventArgs e)
-        {            
-            Window1 window11 = new Window1();
-            window11.Show();            
-            this.Close();
-        }
-
-        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        private void Init()
         {
-            WindowPageChat windowChat = new WindowPageChat();
-            windowChat.Show();
-            this.Close();
+            string url = "https://immense-brook-86861.herokuapp.com/";
+
+            AuthorizationRequestHandler authorizationRequestHandler = new AuthorizationRequestHandler(url);
+
+            authorizationRequestHandler.OnSuccesAuthorize += (token) => {
+
+                //WindowPageChat windowChat = new WindowPageChat();
+                //windowChat.Show();
+                //this.Close();
+
+                txtUserNameSignIn.Text = token;
+            };
+            authorizationRequestHandler.OnErrorAuthorize += (message) => {
+                txtUserNameSignIn.Text = message;
+            };
+
+            btnSignIn.Click += (s, e) =>
+            {
+                string userName = txtUserNameSignIn.Text;
+
+                if (InputFieldValidator.ValidUserName(userName))
+                {
+                    string password = txtPasswordSignIn.Text;
+
+                    if (InputFieldValidator.ValidPassword(password))
+                    {
+                        authorizationRequestHandler.AuthorizeAsync(userName, password);
+                    }
+                }
+            };
+
+            btnRegisterAccount.Click += (s, e) => WindowsManager.OpenRegistrationWindow(this);
         }
     }
 }

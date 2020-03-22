@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Messanger\WpfApp\WpfApp\obj\Debug\
+D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\obj\Debug\
 WpfApp
 none
 false
 DEBUG;TRACE
-D:\Messanger\WpfApp\WpfApp\App.xaml
+D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\App.xaml
 3525902826
 
-81888090726
-13-1505183044
+10-131995018
+14-567283668
 MainWindow.xaml;Window1.xaml;WindowPageChat.xaml;
 
-False
+True
 

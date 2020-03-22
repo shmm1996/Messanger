@@ -55,12 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="InputFieldValidator.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowPageChat.xaml.cs">
       <DependentUpon>WindowPageChat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowsManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +113,12 @@
   <ItemGroup>
     <Resource Include="images\button.png" />
     <Resource Include="images\emoji.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChatClient\ChatClient.csproj">
+      <Project>{296863e8-4907-443d-8d01-bf44beadf9f8}</Project>
+      <Name>ChatClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
