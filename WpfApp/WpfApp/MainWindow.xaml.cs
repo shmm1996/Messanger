@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp
+namespace UIMessSingIn
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +23,20 @@ namespace WpfApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnRegisterAccount_Click(object sender, RoutedEventArgs e)
+        {            
+            Window1 window11 = new Window1();
+            window11.Show();            
+            this.Close();
+        }
+
+        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            WindowPageChat windowChat = new WindowPageChat();
+            windowChat.Show();
+            this.Close();
         }
     }
 }
