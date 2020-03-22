@@ -14,9 +14,9 @@ using System.Windows.Shapes;
 
 namespace UIMessSingIn
 {
-    public partial class WindowPageChat : Window
+    public partial class WindowProfile : Window
     {
-        public WindowPageChat(string token)
+        public WindowProfile()
         {
             InitializeComponent();
         }

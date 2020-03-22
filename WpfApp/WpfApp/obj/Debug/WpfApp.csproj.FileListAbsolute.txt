@@ -39,3 +39,5 @@ D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\bin\Debug\ClientChat.dll
 D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\bin\Debug\Newtonsoft.Json.dll
 D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\bin\Debug\ClientChat.pdb
 D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\obj\Debug\WpfApp.csproj.CopyComplete
+D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\obj\Debug\WindowProfile.g.cs
+D:\SystemData\Desktop\Messanger\WpfApp\WpfApp\obj\Debug\WindowProfile.baml

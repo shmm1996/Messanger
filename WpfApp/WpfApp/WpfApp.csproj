@@ -62,6 +62,9 @@
     <Compile Include="WindowPageChat.xaml.cs">
       <DependentUpon>WindowPageChat.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowProfile.xaml.cs">
+      <DependentUpon>WindowProfile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowsManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -80,6 +83,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="WindowPageChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowProfile.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -119,6 +126,13 @@
       <Project>{296863e8-4907-443d-8d01-bf44beadf9f8}</Project>
       <Name>ChatClient</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\avatar.png" />
+    <Resource Include="images\exit.png" />
+    <Resource Include="images\rbtnChat.png" />
+    <Resource Include="images\rbtnPeople.png" />
+    <Resource Include="images\rbtnSetting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

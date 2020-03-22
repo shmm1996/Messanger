@@ -33,15 +33,12 @@ namespace UIMessSingIn
 
             AuthorizationRequestHandler authorizationRequestHandler = new AuthorizationRequestHandler(url);
 
-            authorizationRequestHandler.OnSuccesAuthorize += (token) => {
-
-                //WindowPageChat windowChat = new WindowPageChat();
-                //windowChat.Show();
-                //this.Close();
-
-                txtUserNameSignIn.Text = token;
+            authorizationRequestHandler.OnSuccesAuthorize += (token) =>
+            {
+                WindowsManager.OpenMessangerWindow(token, this);
             };
-            authorizationRequestHandler.OnErrorAuthorize += (message) => {
+            authorizationRequestHandler.OnErrorAuthorize += (message) =>
+            {
                 txtUserNameSignIn.Text = message;
             };
 

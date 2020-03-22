@@ -32,15 +32,12 @@ namespace UIMessSingIn
 
             RegistrationRequestHandler registrationRequestHandler = new RegistrationRequestHandler(url);
 
-            registrationRequestHandler.OnSuccesRegistrate += (token) => {
-
-                //WindowPageChat windowChat = new WindowPageChat();
-                //windowChat.Show();
-                //this.Close();
-
-                txtUserNameSignUp.Text = token;
+            registrationRequestHandler.OnSuccesRegistrate += (token) =>
+            {
+                WindowsManager.OpenMessangerWindow(token, this);
             };
-            registrationRequestHandler.OnErrorRegistrate += (message) => {
+            registrationRequestHandler.OnErrorRegistrate += (message) =>
+            {
                 txtUserNameSignUp.Text = message;
             };
 

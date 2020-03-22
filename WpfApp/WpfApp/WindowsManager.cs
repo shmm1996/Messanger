@@ -19,9 +19,9 @@ namespace WpfApp
             s?.Close();
         }
 
-        public static void OpenMessangerWindow(string userName, string email, string token, Window s = null)
+        public static void OpenMessangerWindow(string token, Window s = null)
         {
-            new WindowPageChat(userName, email, token).Show();
+            new WindowPageChat(token).Show();
             s?.Close();
         }
 
