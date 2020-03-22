@@ -39,25 +39,61 @@ namespace UIMessSingIn
             };
             authorizationRequestHandler.OnErrorAuthorize += (message) =>
             {
-                txtUserNameSignIn.Text = message;
+                //txtUserNameSignIn.Text = message;
+                MessageBox.Show(message);
             };
 
             btnSignIn.Click += (s, e) =>
             {
                 string userName = txtUserNameSignIn.Text;
 
-                if (InputFieldValidator.ValidUserName(userName))
+                if (InputFieldValidator.ValidUserName(userName, out string userNameCallbackMsg))
                 {
-                    string password = txtPasswordSignIn.Text;
+                    string password = txtPasswordSignIn.Password;
 
-                    if (InputFieldValidator.ValidPassword(password))
+                    if (InputFieldValidator.ValidPassword(password, out string passwordCallbackMsg))
                     {
                         authorizationRequestHandler.AuthorizeAsync(userName, password);
                     }
+                    else
+                    {
+                        //err box
+                        lblPasswSingIn.Width = passwordCallbackMsg.Length * 5.4;
+                        txtPasswordSignIn.BorderBrush = new SolidColorBrush(Color.FromRgb(255, 0, 51));
+                        lblPasswSingIn.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                        lblPasswSingIn.Content = passwordCallbackMsg;
+
+                    }
+                }
+                else
+                {
+                    //err box                    
+                    lblUNameSingIn.Width = userNameCallbackMsg.Length * 5.4;
+                    txtUserNameSignIn.BorderBrush = new SolidColorBrush(Color.FromRgb(255, 0, 51));
+                    lblUNameSingIn.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                    lblUNameSingIn.Content = userNameCallbackMsg;
+
                 }
             };
 
+            txtPasswordSignIn.GotFocus += (s, e) =>
+            {                
+                lblPasswSingIn.Content = "";
+                txtPasswordSignIn.BorderBrush = new SolidColorBrush(Color.FromRgb(250,250,250));
+                lblPasswSingIn.Background = new SolidColorBrush(Color.FromRgb(248, 248, 250));                
+            };
+
+            txtUserNameSignIn.GotFocus += (s, e) =>
+            {
+                lblUNameSingIn.Content = "";
+                txtUserNameSignIn.BorderBrush = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+                lblUNameSingIn.Background = new SolidColorBrush(Color.FromRgb(248, 248, 250));                
+            };
+
             btnRegisterAccount.Click += (s, e) => WindowsManager.OpenRegistrationWindow(this);
+
+            txtUserNameSignIn.Focus();
         }
     }
 }
+

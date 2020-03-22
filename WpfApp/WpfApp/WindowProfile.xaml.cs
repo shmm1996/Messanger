@@ -19,6 +19,8 @@ namespace UIMessSingIn
         public WindowProfile()
         {
             InitializeComponent();
+
+            btnExit.Click += (s, e) => Environment.Exit(0);
         }
     }
 }

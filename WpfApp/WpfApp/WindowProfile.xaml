@@ -50,7 +50,7 @@
         </Grid>
 
         <Grid x:Name="gridProfil" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="4" >
-            <Label Content="My profile" HorizontalAlignment="Center" Height="67" Margin="0" VerticalAlignment="Center" Width="167" Padding="0" FontSize="35"/>
+            <Label Content="My profile" HorizontalAlignment="Center" Height="66" Margin="297,24,521,28" VerticalAlignment="Center" Width="167" Padding="0" FontSize="35"/>
         </Grid>
 
 
@@ -83,7 +83,14 @@
             <TextBox x:Name="txtSurnameChanges" HorizontalAlignment="Left" Height="50" Margin="250,0,0,0" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Background="#f8f8fa" BorderBrush="White"  FontSize="16" Padding="5"/>
 
             <Button x:Name="btnChanges" Content="Save Changes" HorizontalAlignment="Left" Margin="323,0,0,0" Grid.Row="9" VerticalAlignment="Top" Width="231" Height="51" Background="#258ff8" Foreground="White" FontSize="20"/>
-            <Image HorizontalAlignment="Left" Height="57" Margin="296,50,0,0" VerticalAlignment="Top" Width="57" Source="images/avatar.png" Stretch="Fill"/>
+            <Ellipse HorizontalAlignment="Left" Height="42" Margin="311,65,0,0" VerticalAlignment="Top" Width="42" RenderTransformOrigin="1.028,0.806">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="images/avatar.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Ellipse Fill="Lime" HorizontalAlignment="Left" Height="16" Margin="337,91,0,0" VerticalAlignment="Top" Width="16" RenderTransformOrigin="-0.188,-0.406"/>
+
             <Label Content="Avatar" HorizontalAlignment="Left" Margin="377,57,0,0" VerticalAlignment="Top" Width="177" FontSize="30" Height="50"/>
 
 
